@@ -1,0 +1,8 @@
+1. mvn jrebel:generate -Drebel.xml.dir=src/main/resources
+
+2. Eclipse: Import -> Maven project
+
+3. Right-click on the eclipse project, JRebel -> Generate rebel-remote.xml
+
+4. mvn package
+
