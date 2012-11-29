@@ -2,15 +2,15 @@
 <application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
 
 	<classpath>
-		<dir name="${project.root}/src/main/resources">
+		<dir name="/Users/anton/work-src/pets/src/main/resources">
 		</dir>
-		<dir name="${project.root}/target/classes">
+		<dir name="/Users/anton/work-src/pets/target/classes">
 		</dir>
 	</classpath>
 
 	<web>
 		<link target="/">
-			<dir name="${project.root}/src/main/webapp">
+			<dir name="/Users/anton/work-src/pets/src/main/webapp">
 			</dir>
 		</link>
 	</web>
