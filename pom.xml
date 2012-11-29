@@ -211,6 +211,7 @@
               <configuration>
                 <addResourcesDirToRebelXml>true</addResourcesDirToRebelXml>
                 <alwaysGenerate>true</alwaysGenerate>
+                <rootPath>$${project.root}</rootPath>
                 <rebelXmlDirectory>src/main/resources</rebelXmlDirectory>
               </configuration>
               <executions>
