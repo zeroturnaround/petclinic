@@ -1,8 +1,12 @@
-1. mvn jrebel:generate -Drebel.xml.dir=src/main/resources
+1. mvn jrebel:generate
 
-2. Eclipse: Import -> Maven project
+  Generates rebel.xml configuration file to src/main/resources
 
-3. Right-click on the eclipse project, JRebel -> Generate rebel-remote.xml
+2. One the maven project in your favorite IDE
+   In Eclipse: Import -> Maven project
+   In IntelliJ IDEA or NetBeans: open as Maven project
 
-4. mvn package
+3. Start the application container with -javaagent:/path/to/jrebel.jar
+   Or the IDE does it for you automatically.
 
+done.
