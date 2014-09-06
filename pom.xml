@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.zt.petclinic</groupId>
   <artifactId>petclinic</artifactId>
@@ -229,7 +229,8 @@
         <version>2.2.1</version>
         <configuration>
           <!-- force release with snapshot dependencies/plugins -->
-          <!-- this is bad (don't do it at home), but required for the tomcat6 plugin -->
+          <!-- this is bad (don't do it at home), but required for the tomcat6 
+            plugin -->
           <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
           <ignoreSnapshots>true</ignoreSnapshots>
         </configuration>
@@ -261,6 +262,14 @@
           <update>true</update>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.4</version>
+        <configuration>
+          <warName>petclinic</warName>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
@@ -282,8 +291,9 @@
                 </goals>
                 <configuration>
                   <tasks>
-                    <copy overwrite="true" file="${basedir}/src/test/tomcat/logback-test.xml"
-                          todir="${project.build.directory}/classes"/>
+                    <copy overwrite="true"
+                      file="${basedir}/src/test/tomcat/logback-test.xml"
+                      todir="${project.build.directory}/classes" />
                   </tasks>
                 </configuration>
               </execution>
