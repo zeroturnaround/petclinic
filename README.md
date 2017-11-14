@@ -29,7 +29,7 @@ Once the application server has started, you will see the following message in t
 The application is now accessible at ```https://localhost:9443/petclinic```
 
 
-NB! The path in rebel.xml must match the directly that was mapped via command line (/tmp/petclinic)
+NB! The path in rebel.xml must match the directory that was mapped via command line (/tmp/petclinic)
 
 
 
