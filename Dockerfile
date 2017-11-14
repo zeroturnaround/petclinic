@@ -5,4 +5,4 @@ COPY target/petclinic.war /tmp/petclinic.war
 RUN wsadmin.sh -lang jython -conntype NONE -c "AdminApp.install('/tmp/petclinic.war', '[ -appname petclinic -contextroot /petclinic -MapWebModToVH [[ petclinic petclinic.war,WEB-INF/web.xml default_host]]]')"
 
 #docker build -t waspet .
-#docker run -d -p 9043:9043 -p 9443:9443 -v /Users/anton/work-src/petclinic:/tmp/petclinic -v /Users/anton/.jrebel:/home/was/.jrebel waspet
+#docker run -d -p 9043:9043 -p 9443:9443 -v `pwd`:/tmp/petclinic -v ~/.jrebel:/home/was/.jrebel waspet

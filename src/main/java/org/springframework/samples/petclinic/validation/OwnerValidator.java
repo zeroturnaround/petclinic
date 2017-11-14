@@ -22,9 +22,9 @@ public class OwnerValidator {
         if (!StringUtils.hasLength(owner.getAddress())) {
             errors.rejectValue("address", "required", "required");
         }
-        if (!StringUtils.hasLength(owner.getCity())) {
-            errors.rejectValue("city", "required", "required");
-        }
+//        if (!StringUtils.hasLength(owner.getCity())) {
+//            errors.rejectValue("city", "required", "required");
+//        }
 
         String telephone = owner.getTelephone();
         if (!StringUtils.hasLength(telephone)) {
