@@ -28,6 +28,8 @@ Once the application server has started, you will see the following message in t
 
 The application is now accessible at ```https://localhost:9443/petclinic```
 
+5. Now you can open the project in your beloved IDE, make changes to the code and see JRebel reloading the app on-the-fly
+
 
 NB! The path in rebel.xml must match the directory that was mapped via command line (/tmp/petclinic)
 
